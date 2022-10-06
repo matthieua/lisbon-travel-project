@@ -8,6 +8,10 @@ body {
   margin: 0 auto;
 }
 
+.text-center {
+  text-align: center;
+}
+
 .grid {
   display: grid;
   grid-gap: 64px;
@@ -15,20 +19,56 @@ body {
 
 .img-responsive {
   max-width: 100%;
+  display: block;
 }
 
 .grid-2-columns {
   grid-template-columns: 1fr 1fr;
 }
 
+.grid-3-columns {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
 .grid-3-columns-with-first-narrow {
   grid-template-columns: 1fr 2fr 2fr;
 }
 
+.card {
+  background: white;
+  margin: 30px 0;
+}
+
+.card-body {
+  padding: 30px;
+}
+
+.card-footer {
+  padding: 0 30px 30px;
+}
+
+.btn {
+  display: block;
+  color: white;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  padding: 16px;
+  background-color: #462cb3;
+  text-decoration: none;
+}
+
 section {
-  max-width: 1200px;
+  max-width: 100%;
   margin: 0 auto;
-  padding: 100px 0;
+  padding: 100px;
+}
+
+section.secondary {
+  background: #f8f8f8;
 }
 
 header {
@@ -99,6 +139,22 @@ main h3 {
   line-height: 1.5;
   color: #272044;
   margin: 0;
+}
+
+main h4 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1;
+  color: #272044;
+  margin: 0;
+}
+
+main h5 {
+  font-weight: 700;
+  font-size: 13px;
+  margin: 0;
+  line-height: 1;
+  color: #272044;
 }
 
 main p {
